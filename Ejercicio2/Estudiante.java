@@ -37,7 +37,11 @@ public class Estudiante {
     
     public void dejarCarrera() {
         this.carrera = "";
-    }
+        for (String materia: materias) {
+            dejarMateria(materia);
+        }
+        }
+    
     
     public void dejarMateria(String materia) {
         if (materias != null && materias.length >0 ) {
@@ -49,10 +53,11 @@ public class Estudiante {
 
     public static void main(String[] args) {
         Estudiante Lucia = new Estudiante("Lucia Vazquez", 2003, "LCD", new String[]{"algo1", "proba", "infra"});
-        Estudiante Victoria = new Estudiante("Victoria Vazquez", 2005, "LBT");
+        Estudiante Victoria = new Estudiante("Victoria Vazquez", 2005, "LBT", new String[]{"bio1", "quimica"});
         System.out.println(Victoria);
         System.out.println(Lucia);
         Lucia.dejarCarrera();
+        Victoria.dejarMateria("bio1");
         System.out.println(Lucia);
         System.out.println(Victoria);
 
