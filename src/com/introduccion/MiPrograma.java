@@ -1,6 +1,4 @@
 package src.com.introduccion;
-import java.util.ArrayList;
-import java.util.Scanner;
 
 //pasos para hacer un proyecto
 
