@@ -3,9 +3,9 @@ import java.time.LocalDate;
 
 public class Libro {
     // Atributos
-    String titulo;
-    String autor;
-    int publicacion; 
+    private String titulo;
+    private String autor;
+    private int publicacion; 
 
     public Libro(String titulo, String autor) {
         this.titulo = titulo;
