@@ -1,3 +1,5 @@
+package src.com.introduccion;
+
 //pasos para hacer un proyecto
 
 // 1- escribir programa
