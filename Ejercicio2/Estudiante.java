@@ -30,7 +30,7 @@ public class Estudiante {
         this.materias = new String[0];
     }
     
-    private int calcularEdad(int nacimiento) {
+    private static int calcularEdad(int nacimiento) {
             int ahora = LocalDate.now().getYear();
             return ahora - nacimiento;
         }
