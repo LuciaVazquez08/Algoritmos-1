@@ -1,7 +1,5 @@
 package Ejercicio3;
 
-import java.util.Arrays;
-
 public class Rectangulo {
     private double largo;
     private double ancho;
