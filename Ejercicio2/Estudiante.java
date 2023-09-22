@@ -9,7 +9,6 @@ public class Estudiante {
     private int edad;
     private String carrera;
     private String[] materias;
-    private int nacimiento;
     private static int estudiantesTotales = 0;
 
     public Estudiante(String nombre, int nacimiento) {
@@ -30,7 +29,7 @@ public class Estudiante {
         this.carrera = carrera; 
         this.materias = new String[0];
     }
-    
+
     @Override
     public String toString() {
         String materiasStr = Arrays.toString(materias);
@@ -67,7 +66,7 @@ public class Estudiante {
     
     public static Estudiante agregarEstudiante(String nombre, int nacimiento) {
         estudiantesTotales += 1;
-        return  new Estudiante(nombre, nacimiento);
+        return new Estudiante(nombre, nacimiento);
     }
 
 
