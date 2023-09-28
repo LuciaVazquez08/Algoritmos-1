@@ -5,3 +5,4 @@ public class SalidaConsola {
         System.out.println(mensaje);
     }
 }
+
