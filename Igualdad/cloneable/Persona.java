@@ -1,5 +1,7 @@
 package Igualdad.cloneable;
 
+import java.util.Objects;
+
 public class Persona implements Cloneable {
     private String nombre;
     private int edad;
@@ -25,6 +27,22 @@ public class Persona implements Cloneable {
     public Persona clonar() {
         // Se crea una nueva instancia de Persona usando el constructor de copia
         return new Persona(this);
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (this == other) return true;
+        if (other == null || getClass() != other.getClass()) return false;
+        // if (!super.equals(other)) return false;
+
+        Persona that = (Persona) other;
+
+        return this.nombre.equals(that.nombre) && this.documento.equals(that.documento);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), nombre, documento);
     }
 
     public void setEdad(int edad) {
