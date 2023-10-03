@@ -33,7 +33,6 @@ public class Persona implements Cloneable {
     public boolean equals(Object other) {
         if (this == other) return true;
         if (other == null || getClass() != other.getClass()) return false;
-        // if (!super.equals(other)) return false;
 
         Persona that = (Persona) other;
 

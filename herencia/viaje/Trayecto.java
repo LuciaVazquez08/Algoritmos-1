@@ -7,7 +7,7 @@ public class Trayecto {
     private int cantEstaciones;
 
     public Trayecto(String origen, String destino, double distancia, int cantEstaciones) {
-        this. origen = origen;
+        this.origen = origen;
         this.destino = destino;
         this.distancia = distancia;
         this.cantEstaciones = cantEstaciones;
