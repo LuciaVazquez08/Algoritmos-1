@@ -1,4 +1,4 @@
-package claseAbstracta;
+package claseAbstracta.juegoRol;
 
 public class Wizard extends Personaje{
 
