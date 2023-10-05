@@ -1,6 +1,6 @@
-package claseAbstracta.juegoRol;
+package claseAbstracta;
 
-public class Wizard extends Personaje{
+public class Wizard extends Personaje implements AtaqueDistancia{
 
     public Wizard(String nombre, int nivel, int puntosVida) {
         super(nombre, nivel, puntosVida);
@@ -16,6 +16,12 @@ public class Wizard extends Personaje{
     public void defender() {
         this.puntosVida += 3;
         System.out.println(nombre + " se defiende.");
+    }
+
+    @Override
+    public void atacarDistancia(Personaje other) {
+       other.puntosVida -= 3;
+       System.out.println(nombre + " ataca a distancia");;
     }
     
 }

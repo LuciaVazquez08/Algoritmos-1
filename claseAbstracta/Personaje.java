@@ -1,4 +1,4 @@
-package claseAbstracta.juegoRol;
+package claseAbstracta;
 
 public abstract class Personaje {
     protected String nombre;

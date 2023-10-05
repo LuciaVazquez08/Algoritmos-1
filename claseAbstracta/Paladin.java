@@ -1,4 +1,4 @@
-package claseAbstracta.juegoRol;
+package claseAbstracta;
 
 public class Paladin extends Personaje{
 
