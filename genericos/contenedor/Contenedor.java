@@ -1,4 +1,4 @@
-package genericos;
+package genericos.contenedor;
 
 public class Contenedor<T> {
     protected T elemento;
