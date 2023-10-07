@@ -1,0 +1,189 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "CalculadoraSimple",
+            "request": "launch",
+            "mainClass": "CalculadoraSimple",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "ContadorPalabras",
+            "request": "launch",
+            "mainClass": "ContadorPalabras",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "ConversorTemperatura",
+            "request": "launch",
+            "mainClass": "ConversorTemperatura",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "Libro",
+            "request": "launch",
+            "mainClass": "Ejercicio1.Libro",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "Estudiante",
+            "request": "launch",
+            "mainClass": "Ejercicio2.Estudiante",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "Rectangulo",
+            "request": "launch",
+            "mainClass": "Ejercicio3.Rectangulo",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "EntradaConsola",
+            "request": "launch",
+            "mainClass": "Ejercicio4.Entrada.EntradaConsola",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Igualdad.cloneable.Main",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "Main(1)",
+            "request": "launch",
+            "mainClass": "Igualdad.comparacionestudiante.Main",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "Main(2)",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "PilaDinamica",
+            "request": "launch",
+            "mainClass": "PilaDinamica",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "PilaEstatica",
+            "request": "launch",
+            "mainClass": "PilaEstatica",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "SumaPares",
+            "request": "launch",
+            "mainClass": "SumaPares",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "TablaMultiplicar",
+            "request": "launch",
+            "mainClass": "TablaMultiplicar",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "PruevaAlquiler",
+            "request": "launch",
+            "mainClass": "alquiler.PruevaAlquiler",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "Main(3)",
+            "request": "launch",
+            "mainClass": "basebanco.Main",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "Main(4)",
+            "request": "launch",
+            "mainClass": "claseAbstracta.Main",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "Main(5)",
+            "request": "launch",
+            "mainClass": "excepciones.estudiantes.Main",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "Main(6)",
+            "request": "launch",
+            "mainClass": "figurasGeometricas.Main",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "Main(7)",
+            "request": "launch",
+            "mainClass": "genericos.contenedor.Main",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "ListaGenerica",
+            "request": "launch",
+            "mainClass": "genericos.lista.ListaGenerica",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "PruebaCalculadoraAvanzada",
+            "request": "launch",
+            "mainClass": "polimorfismo.calculadora.PruebaCalculadoraAvanzada",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "Main(8)",
+            "request": "launch",
+            "mainClass": "polimorfismo.medios.Main",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "MiPrograma",
+            "request": "launch",
+            "mainClass": "src.com.introduccion.MiPrograma",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        },
+        {
+            "type": "java",
+            "name": "Main(9)",
+            "request": "launch",
+            "mainClass": "viaje.Main",
+            "projectName": "Algoritmos1clase-3_4dc8478e"
+        }
+    ]
+}

@@ -20,3 +20,40 @@ try {
 } catch (Exception e) {
     // Manejo de la excepción Exception
 }
+
+//BLOQUE FINALLY - siempre se ejecuta: es para tareas de limpieza
+try {
+    // Código que puede generar una excepción
+} catch (IOException e) {
+    // Manejo de la excepción
+} finally {
+    // Código que se ejecutará siempre
+}
+
+// en metodos
+public void miMetodo() throws MiAppException {
+    // Código que puede generar MiAppException
+}
+
+// construir excepcion
+public class MiAppException extends Exception {
+    public MiAppException() {
+        super("Error en MiApp");
+    }
+
+    public MiAppException(String mensaje) {
+        super(mensaje);
+    }
+}
+
+// arreglo que gurda infor de las excepciones
+catch (RuntimeException e) {
+    StackTraceElement elementos[] = e.getStackTrace();
+    for (int i = 0; i < elementos.length; i++) {       
+        System.err.println(
+            elementos[i].getMethodName() + "("
+            + elementos[i].getFileName() + ":"
+            + elementos[i].getLineNumber() + ")"
+        );
+    }
+}
