@@ -16,6 +16,9 @@ public class ListaGenerica<E> extends AbstractList<E>{
 
     @Override
     public E set(int index, E element) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException(index);
+        }
         elementos[index] = element;
         return element;
     }
@@ -33,12 +36,25 @@ public class ListaGenerica<E> extends AbstractList<E>{
 
     @Override
     public void add(int index, E element){
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException();
+        }
         set(index, element);
         size++;
     }
     
     @Override
     public E remove(int index) {
+        if (isEmpty()) {
+            try {
+                throw new ListaVaciaException();
+            } catch (ListaVaciaException e) {
+                e.printStackTrace();
+            }
+        }
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException();
+        }
         E elementoRemovido = get(index);
         int i = 0;
         boolean encontrado = false;
