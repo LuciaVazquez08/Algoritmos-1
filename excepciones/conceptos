@@ -1,0 +1,22 @@
+// bloque try-catch para checked exceptions
+
+try {
+    // Código que puede generar una excepción
+    int resultado = 10 / 0;     // Esto generará una ArithmeticException
+} catch (ArithmeticException e) {
+    // Manejo de la excepción
+    System.out.println("Error: División por cero. " + e.getMessage());
+}
+
+//para multiples definimos primero las especializadas y luego las generales
+try {
+    // Código que puede generar una excepción
+} catch (NumberFormatException | IndexOutOfBoundsException  e) {
+    // Manejo de la excepción NumberFormatException o IndexOutOfBoundsException
+} catch (IllegalArgumentException e) {
+    // Manejo de la excepción IllegalArgumentException
+} catch (RuntimeException e) {
+    // Manejo de la excepción RuntimeException
+} catch (Exception e) {
+    // Manejo de la excepción Exception
+}

@@ -1,0 +1,25 @@
+// polimorfismo dado por dynamic binding
+
+public class Main {
+    public static void main(String[] args) {
+        Figura figura1 = new Circulo();
+        Figura figura2 = new Rectangulo();
+        Figura figura3 = new Triangulo();
+        
+        figura1.dibujar();  // Resultado: Dibujando un círculo.
+        figura2.dibujar();  // Resultado: Dibujando un rectángulo.
+        figura3.dibujar();  // Resultado: Dibujando un triángulo.
+    }
+}
+
+//PARA SOBRECARGA ES IMPORTANTE QUE LA FORMA DEBE SER DISTINTA
+// (int fila, String algo) == (int columna, String algo)
+
+// cohercion
+public static float division(float x, float y) {
+    return x / y;
+}
+
+int p = 10;
+int q = 3;
+division(p, q);        // 3.3333333
