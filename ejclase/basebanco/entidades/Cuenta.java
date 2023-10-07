@@ -9,7 +9,7 @@ import basebanco.operaciones.Transaccion;
 public class Cuenta {
     
     private int numero;
-    private CodigoBancario codigoBancario;
+    protected CodigoBancario codigoBancario;
     private float saldo;
     private List<Transaccion> operaciones;
 

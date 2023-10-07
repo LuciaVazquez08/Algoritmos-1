@@ -9,7 +9,7 @@ import basebanco.operaciones.Transaccion;
 public class Main {
     public static void main(String[] args) {
         Cuenta cuenta1 = new Cuenta(1);
-        Cuenta cuenta2 = new Cuenta(1);
+
         
         Transaccion trx1 = new Deposito(cuenta1, 100);
         trx1.procesar();

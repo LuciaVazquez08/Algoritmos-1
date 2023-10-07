@@ -1,0 +1,50 @@
+// DEFINICION DE HERENCIA EN JAVA
+class Animal {
+    void comer() {
+        System.out.println("El animal come alimentos.");
+    }
+}
+
+class Perro extends Animal {
+    void ladrar() {
+        System.out.println("El perro ladra.");
+    }
+}
+
+public class HerenciaSimple {
+    public static void main(String[] args) {
+        Perro miPerro = new Perro();
+        miPerro.comer();    // Heredado de Animal
+        miPerro.ladrar();   // Propio de Perro
+    }
+}
+
+// Para heredar comportamientos multiples lo mejor es tener una clase madre y multiples interfaces de ser necesarias.
+
+//ACCESO A METODOS
+class Vehiculo {
+    void encenderMotor() {
+        System.out.println("El motor del vehículo se enciende.");
+    }
+}
+
+class Auto extends Vehiculo {
+    void encenderMotor() {
+        super.encenderMotor();  // Llama al método de la superclase
+        System.out.println("El auto está listo para conducir.");
+    }
+}
+
+// WIDENING
+class Animal { }
+class Perro extends Animal { }
+
+Perro miPerro = new Perro();
+Animal miAnimal = miPerro;      // Upcasting implícito
+
+//NARROWING
+class Animal { }
+class Perro extends Animal { }
+
+Animal miAnimal = new Perro();
+Perro miPerro = (Perro) miAnimal;   // Downcasting explícito
