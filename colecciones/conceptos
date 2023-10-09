@@ -1,0 +1,110 @@
+// declaracion e inicializacion 
+
+List<String> miLista = new ArrayList<>();
+Set<Integer> miConjunto = new HashSet<>();
+Map<String, Integer> miMapa = new HashMap<>();
+
+//ejemplo List
+import java.util.ArrayList;
+import java.util.List;
+
+public class EjemploLista {
+    public static void main(String[] args) {
+        // Crear una lista de cadenas
+        List<String> listaCadenas = new ArrayList<>();
+
+        // Agregar elementos a la lista
+        listaCadenas.add("Manzana");
+
+        // Acceder a elementos por índice
+        String primeraFruta = listaCadenas.get(0);
+        System.out.println("Primera fruta: " + primeraFruta);
+
+        // Iterar a través de la lista
+        for (String fruta : listaCadenas) {
+            System.out.println(fruta);
+        }
+    }
+}
+
+//ejemplo set
+import java.util.HashSet;
+import java.util.Set;
+
+public class EjemploConjunto {
+    public static void main(String[] args) {
+        // Crear un conjunto de números enteros
+        Set<Integer> conjuntoNumeros = new HashSet<>();
+
+        // Agregar elementos al conjunto
+        conjuntoNumeros.add(10);
+        conjuntoNumeros.add(10); // Intento de duplicado, se ignora
+
+        // Iterar a través del conjunto (sin garantía de orden)
+        for (int numero : conjuntoNumeros) {
+            System.out.println(numero);
+        }
+    }
+}
+
+//ejemplo map
+import java.util.HashMap;
+import java.util.Map;
+
+public class EjemploMap {
+    public static void main(String[] args) {
+        // Crear un mapa de nombres de frutas y sus cantidades
+        Map<String, Integer> inventarioFrutas = new HashMap<>();
+
+        // Agregar elementos al mapa
+        inventarioFrutas.put("Manzana", 50);
+        inventarioFrutas.put("Banana", 30);
+        inventarioFrutas.put("Cereza", 25);
+        inventarioFrutas.put("Cereza", 15); // Reemplaza el valor previo de Cereza
+
+        // Obtener el valor asociado a una clave
+        int cantidadManzanas = inventarioFrutas.get("Manzana");
+        System.out.println("Cantidad de manzanas: " + cantidadManzanas);
+
+        // Iterar a través del mapa con entrySet
+        for (Map.Entry<String, Integer> entrada : inventarioFrutas.entrySet()) {
+            System.out.println(entrada.getKey() + ": " + entrada.getValue() + " unidades");
+        }
+
+        // Iterar a través del mapa con keySet
+        for (String clave : inventarioFrutas.keySet()) {
+            System.out.println(clave + ": " + inventarioFrutas.get(clave) + " unidades");
+        }
+
+        // Iterar a través del mapa con values
+        int total = 0;
+        for (Integer valor : inventarioFrutas.values()) {
+            total += valor;
+        }
+        System.out.println("Frutas totales: " + total);
+    }
+}
+
+// ejemplo queue
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class EjemploCola {
+    public static void main(String[] args) {
+        // Crear una cola de números enteros
+        Queue<Integer> colaNumeros = new LinkedList<>();
+
+        // Agregar elementos a la cola (al final de la linkedlist)
+        colaNumeros.offer(10);
+        colaNumeros.offer(20);
+
+        // Acceder y eliminar elementos de la cola
+        int primerNumero = colaNumeros.poll(); // Retira y devuelve el primer elemento
+        System.out.println("Primer número en la cola: " + primerNumero);
+
+        // Iterar a través de la cola
+        for (int numero : colaNumeros) {
+            System.out.println(numero);
+        }
+    }
+}
