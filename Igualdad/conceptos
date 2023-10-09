@@ -1,0 +1,93 @@
+// IGUALDAD
+
+@Override
+public boolean equals(Object otro){
+    if (this == otro) {
+        return true;
+    }
+    if (otro == null) {
+        return false;
+     }
+    //if (this.getClass() != otro.getClass()) {
+       // return false;
+    //}
+
+}
+
+@Override
+public boolean equals(Object otro) {
+    if (this == otro) {
+        return true;
+    }
+
+    if (otro == null || this.getClass() != otro.getClass()) {
+        return false;
+    }
+
+    MiClase otro2 = (MiClase) otro;   // Downcasting a MiClase
+    return this.getAtrPrimitivo() == otro2.getAtrPrimitivo() 
+            && Objects.equals(this.getAtrReferencia(), otro2.getAtrReferencia());
+}
+
+@Override
+public int hashCode() {
+    return Objects.hash(atributo1, atributo2, atributo3);
+}
+@Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), carreraPostgrado);
+    }
+
+// orden
+public interface Comparable<T> {
+    public int compareTo(T o);
+}
+
+public class Persona implements Comparable<Persona> {
+    // Atributos y métodos...
+    public int compareTo(Persona otro) {
+        // Asumiendo que documento es tipo int
+        return this.getDocumento() - otro.getDocumento();
+    }
+}
+
+public interface Comparator<T> {
+    int compare(T o1, T o2);
+}
+
+public int compareTo(Integer anotherInteger) {
+    return compare(this.value, anotherInteger.value);
+}
+
+public static int compare(int x, int y) {
+    return (x < y) ? -1 : ((x == y) ? 0 : 1);
+}
+
+class ComparadorEdad implements Comparator<Persona> {
+    public int compare(Persona persona1, Persona persona2) {
+        // Asumiendo que edad es tipo Integer
+        return persona1.getEdad().compareTo(persona2.getEdad());
+    }
+}
+
+import java.util.Arrays;
+public static void main(String[] args) {
+    Persona[] personas = new Persona[10];
+    // Se agregan personas al arreglo...
+    Arrays.sort(personas, new ComparadorEdad());
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
