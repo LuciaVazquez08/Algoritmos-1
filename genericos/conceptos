@@ -1,0 +1,38 @@
+// definiciojn lista generica
+
+public class ListaGenerica<T> {
+    private T[] elementos;
+    private int size = 0;
+
+    public ListaGenerica(int capacidad) {
+        elementos = (T[]) new Object[capacidad];
+    }
+
+    public void agregar(T elemento) {
+        // TODO: Resize de arreglo elementos
+        elementos[size++] = elemento;
+    }
+
+    public T obtener(int indice) {
+        // TODO: Validación de índice fuera de rango
+        return elementos[indice];
+    }
+}
+
+// notacion
+E - Element (used extensively by the Java Collections Framework)
+K - Key
+N - Number
+T - Type
+V - Value
+S,U,V etc. - 2nd, 3rd, 4th types
+
+// declarar metodo generico
+public class MiClaseNoGenerica {
+    public <K, V> void miMetodoGenerico(K clave, V valor) {
+        // ...
+    }
+}
+
+//parametros acotados
+public class ClaseGenericaNumerica<T extends Number> {...}

@@ -1,0 +1,22 @@
+// definicion clase abstracta
+abstract class ClaseAbstracta {
+    // Otros métodos y propiedades
+    
+    // Método abstracto (sin implementación)
+    abstract void metodoAbstracto();
+}
+
+//definicion interfaz
+public interface NombreDeLaInterfaz {
+	// Constante
+	static final int CONSTANTE = 10;
+
+    // Declaración de método abstracto
+    tipoDeRetorno nombreDelMetodo(parametros);
+    
+	// Método default
+	default metodoDef() {
+		// Implementación del método
+	}
+}
+
