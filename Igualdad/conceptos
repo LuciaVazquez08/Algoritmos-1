@@ -77,6 +77,34 @@ public static void main(String[] args) {
     Arrays.sort(personas, new ComparadorEdad());
 }
 
+//copia
+public class Persona implements Cloneable {
+    
+@Override
+public Persona clone() throws CloneNotSupportedException {...}
+
+@Override
+public Persona clone() throws CloneNotSupportedException {
+    Persona copia = (Persona) super.clone();    // Copia superficial de Persona
+    copia.documento = this.documento.clone();   // Copia profunda de Documento
+    return copia;
+}
+}
+
+// Constructor de copia
+public Persona(Persona otraPersona) {
+    this.nombre = otraPersona.nombre;
+    this.edad = otraPersona.edad;
+    // Se crea una nueva instancia de Documento usando el constructor de copia
+    this.documento = new Documento(otraPersona.documento);
+}
+
+// Método de construcción de copia
+public Persona clonar() {
+    // Se crea una nueva instancia de Persona usando el constructor de copia
+    return new Persona(this);
+}
+
 
 
 

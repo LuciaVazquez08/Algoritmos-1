@@ -3,11 +3,11 @@ package excepciones.estudiantes;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class RegistoEstudiantes {
+public class RegistroEstudiantes {
     private Object[] elementos;
     private int size;
 
-    public RegistoEstudiantes(){
+    public RegistroEstudiantes(){
         size = 0;
         elementos = new Object[size];
     }
@@ -20,7 +20,7 @@ public class RegistoEstudiantes {
 
     }
 
-    public void addEstudainte(){
+    public void addEstudiante(){
         Scanner scanner = new Scanner(System.in);
         try {
             System.out.println("Ingrese el nombre del estudiante:");
