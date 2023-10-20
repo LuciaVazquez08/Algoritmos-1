@@ -1,0 +1,64 @@
+//bubble sort
+
+public void bubbleSort(int[] arreglo) {
+    int n = arreglo.length;
+    boolean huboCambio;
+    do {
+        huboCambio = false;
+        for (int i = 1; i < n; i++) {
+            if (arreglo[i - 1] > arreglo[i]) {
+                // Intercambia arreglo[i-1] y arreglo[i]
+                int temp = arreglo[i - 1];
+                arreglo[i - 1] = arreglo[i];
+                arreglo[i] = temp;
+                huboCambio = true;
+            }
+        }
+        n--;
+    } while (huboCambio);
+}
+// para genericos
+if (arreglo[i - 1] != null && arreglo[i - 1].compareTo(arreglo[i]) > 0)
+
+//TERMINA GENERICO
+public statis <T extends Compaable<T>> void bubbleSort(List<T> miarray){
+    T temposral;
+    for (int i = 0; i< miarray.size(); i++){
+        for (int j = 1; j <(miarray.size()-1), j++){
+            if (miarray.get(j-1))
+        }
+        
+    }
+}
+
+//SELECTION SORT
+public statis <T extends Compaable<T>> void selectionSort(List<T> miarray){
+    for (int i= 0; i < miarray.size()-1)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
